@@ -1,8 +1,8 @@
 let dataMahasiswa = [
-    {nim:"123456", nama:"Adelia febrianti", jurusan:"Kehutanan", ipk:3.9},
+    {nim:"123456", nama:"Adellia febrianti", jurusan:"Kehutanan", ipk:3.9},
     {nim:"234567", nama:"Rossy A Andini", jurusan:"Kehutanan", ipk:3.9},
     {nim:"345678", nama:"Marsha Maulina", jurusan:"Biologi Murni", ipk:3.88},
-    {nim:"456789", nama:"Nike Hidayanh", jurusan:"Pendidikan Kimia", ipk:3.89},
+    {nim:"456789", nama:"Nike Hidayah", jurusan:"Pendidikan Kimia", ipk:3.89},
     {nim:"556789", nama:"Nur Aisah", jurusan:"Agroteknologi", ipk:3.85},
     {nim:"666789", nama:"Zhahra Zulmina", jurusan:"Pendidikan Biologi", ipk:3.87},
     {nim:"777789", nama:"Nanda Aulia", jurusan:"Teknik Perminyakan", ipk:3.91}
@@ -77,3 +77,4 @@ function sortTable(n){
 
     tampilkanData();
 }
+
