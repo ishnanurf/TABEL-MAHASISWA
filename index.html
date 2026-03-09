@@ -1,65 +1,49 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8">
-<title>Tabel Mahasiswa</title>
+    <meta charset="UTF-8">
+    <title>Data Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
 
-<link rel="stylesheet" href="style.css">
-
+    <!-- Font Schabo Condensed -->
+    <link href="https://fonts.cdnfonts.com/css/schabo-condensed" rel="stylesheet">
 </head>
+
 <body>
 
-<h2>Data Mahasiswa</h2>
+<h1 class="judul">Data Mahasiswa</h1>
 
-<input type="text" id="searchInput" placeholder="Cari Nama atau NIM...">
+<div class="container">
 
-<table id="tabelMahasiswa">
+    <!-- FORM INPUT -->
+    <div class="form">
+        <input type="text" id="nim" placeholder="NIM">
+        <input type="text" id="nama" placeholder="Nama">
+        <input type="text" id="jurusan" placeholder="Jurusan">
+        <input type="number" id="ipk" placeholder="IPK" step="0.01">
+        <button onclick="tambahMahasiswa()">Tambah Data</button>
+    </div>
 
-<thead>
-<tr>
-<th onclick="sortTable(0)">Nama</th>
-<th onclick="sortTable(1)">NIM</th>
-<th onclick="sortTable(2)">Jurusan</th>
-<th onclick="sortTable(3)">IPK</th>
-</tr>
-</thead>
+    <!-- PENCARIAN -->
+    <input type="text" id="search" placeholder="🔍Cari Nama / NIM..." onkeyup="searchData()">
 
-<tbody>
+    <!-- TABEL -->
+    <table id="tabelMahasiswa">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">NIM</th>
+                <th onclick="sortTable(1)">Nama</th>
+                <th onclick="sortTable(2)">Jurusan</th>
+                <th onclick="sortTable(3)">IPK</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+        </tbody>
+    </table>
 
-<tr>
-<td>John Doe</td>
-<td>123456</td>
-<td>Teknik Informatika</td>
-<td>3.5</td>
-</tr>
-
-<tr>
-<td>Jane Doe</td>
-<td>234567</td>
-<td>Sistem Informasi</td>
-<td>3.2</td>
-</tr>
-
-<tr>
-<td>Bob Smith</td>
-<td>345678</td>
-<td>Teknik Elektro</td>
-<td>3.8</td>
-</tr>
-
-<tr>
-<td>Alice Johnson</td>
-<td>456789</td>
-<td>Ilmu Komputer</td>
-<td>3.1</td>
-</tr>
-
-</tbody>
-
-</table>
+</div>
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
