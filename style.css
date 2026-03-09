@@ -1,49 +1,63 @@
-@font-face {
-font-family: 'Schabo';
-src: url('font/Schabo-Condensed.ttf') format('truetype');
-}
-
 body{
-font-family: Arial, sans-serif;
-background-color: #c5a880;
-text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-align:center;
+    background: linear-gradient(to right, #350314, #fed4cf);
 }
 
-h2{
-margin-top:20px;
-font-family:'Schabo', sans-serif;
-font-size:40px;
-letter-spacing:2px;
+.judul{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:50px;
 }
 
-input{
-padding: 8px;
-width: 250px;
-margin-bottom: 15px;
+.container{
+    width:80%;
+    margin:auto;
+}
+
+.form{
+    margin-bottom:20px;
+}
+
+.form input{
+    padding:8px;
+    margin:5px;
+}
+
+button{
+    padding:8px 15px;
+    background:#002b25;
+    color:white;
+    border:none;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#42010a7e;
+}
+
+#search{
+    padding:8px;
+    width:50%;
+    margin-bottom:15px;
 }
 
 table{
-margin: auto;
-border-collapse: collapse;
-width: 70%;
-background: white;
+    width:100%;
+    border-collapse:collapse;
+    background:#dac19e;
 }
 
 th, td{
-border: 1px solid #0e0d0d;
-padding: 10px;
+    border:1px solid #0a0a0a;
+    padding:15px;
 }
 
 th{
-background-color: #730000;
-color: white;
-cursor: pointer;
-}
-
-tr:nth-child(even){
-background-color: #85838356;
+    background:#380707;
+    color: #faf9f7;
+    cursor:pointer;
 }
 
 tr:hover{
-background-color: #15794f80;
+    background:#5f021270;
 }
